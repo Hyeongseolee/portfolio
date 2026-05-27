@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precision Trajectory & Real-Time Control | Portfolio</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index.html#projects" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="w-full h-[400px] bg-gray-100">
+                <img src="public/images/latte_art_ui.png" class="w-full h-full object-cover" alt="Latte Art UI System">
+            </div>
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">Precision Trajectory Generation & Real-Time Web Control System</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">Bridging User Creativity with Robot Kinematics via Full-Stack Architecture</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Python (PyQt & Flask)</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Trajectory Generation</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Robot Kinematics</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">WebSockets</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Context & Objective -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Context & Objective</h2>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-toss-textBody leading-relaxed space-y-3">
+                            <p><strong>Overview:</strong> A multi-axis robotic manipulator system engineered to replicate the delicate, non-linear fluid-flow and wrist-snap techniques of human baristas.</p>
+                            <p><strong>Objective:</strong> To build an automated latte art system that allows non-expert users to draw custom patterns on a GUI, which the robot instantly translates into smooth, collision-free physical trajectories, while maintaining an accessible and robust real-time control architecture.</p>
+                        </div>
+                    </section>
+
+                    <!-- Technical Implementation -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Technical Implementation</h2>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">1. Trajectory Generation Algorithm</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Implemented continuous path interpolation (e.g., Spline/Bézier profiles) in `Python` to convert discretized pixel coordinates from the UI into time-dependent position, velocity, and acceleration profiles.</li>
+                                    <li>Optimized the velocity profile to bound the maximum joint acceleration, significantly reducing mechanical jerk and preventing milk spillage during high-curvature drawing motions.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">2. HMI UI & Full-Stack Transition</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Initially developed a standalone desktop application using `Python (PyQt)` integrating a responsive drawing canvas and safety dashboard.</li>
+                                    <li>Transitioned the architecture to a universal `HTML/JS` web UI powered by a `Flask` backend server to overcome hardware integration constraints.</li>
+                                    <li>Implemented `Flask-SocketIO` (WebSockets) to broadcast the robot's real-time position, joint status, and task progress (Progress Bar) directly to the web browser.</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">3. System Integration & Communication</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Designed REST APIs using Flask to seamlessly map web UI user inputs to underlying UR3e robot hardware commands.</li>
+                                    <li>Handled multi-motor synchronization via serial communication, mapping generated profiles directly to embedded motor controllers with deterministic cycle times.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Deliverables & Troubleshooting -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Deliverables & Troubleshooting</h2>
+                        <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100 space-y-4">
+                            <div>
+                                <p class="text-toss-textBody mb-2"><strong class="text-red-500">Challenge 1: Communication Lag</strong> During early testing, sharp turns in drawing patterns caused communication lag and jerky motor responses.</p>
+                                <p class="text-toss-textBody"><strong class="text-toss-blue">Solution 1:</strong> Applied a window-based data buffering technique and integrated a look-ahead smoothing algorithm in Python, ensuring steady packet transmission and a 105° sharp-turn precision alignment.</p>
+                            </div>
+                            <div class="border-t border-blue-100 pt-4">
+                                <p class="text-toss-textBody mb-2"><strong class="text-red-500">Challenge 2: App Limitations</strong> The initial Flutter/PyQt approach faced limits in real-time UR3e integration and screen sharing.</p>
+                                <p class="text-toss-textBody"><strong class="text-toss-blue">Solution 2:</strong> Pivoted to a full-stack HTML/JS + Flask WebSocket architecture, resulting in a highly responsive, real-time barista robot system with a custom cafe order queue.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

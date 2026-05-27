@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>학점 및 수강내역 | 포트폴리오</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index_ko.html#about" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                포트폴리오로 돌아가기
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">학업 성과 및 수강 내역</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">메카트로닉스, 제어 시스템 및 반도체 공학에 대한 탄탄한 기초</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">메카트로닉스공학부 (학사)</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">제어 시스템 전공</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">반도체 장비 부품 융합 트랙</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Academic Overview -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">📊</span>종합 학업 지표</h2>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+                                <p class="text-sm font-semibold text-toss-textBody mb-1">전체 평점 (GPA)</p>
+                                <p class="text-3xl font-bold text-toss-blue">4.18 <span class="text-xl text-toss-textMuted">/ 4.5</span></p>
+                            </div>
+                            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+                                <p class="text-sm font-semibold text-toss-textBody mb-1">백분위 환산 점수</p>
+                                <p class="text-3xl font-bold text-toss-blue">96.16 <span class="text-xl text-toss-textMuted">/ 100</span></p>
+                            </div>
+                            <div class="bg-blue-50 border border-blue-100 rounded-2xl p-6 text-center">
+                                <p class="text-sm font-semibold text-toss-textBody mb-1">총 취득 학점</p>
+                                <p class="text-3xl font-bold text-toss-blue">129.0</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Core Coursework Highlights -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="text-toss-blue mr-2">🛠️</span>핵심 전공 수강 내역</h2>
+                        
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-3 flex items-center">🤖 제어 및 로봇 공학</h3>
+                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4 text-toss-textBody text-sm">
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>로봇기구설계및해석</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>기계제어공학및실험 1, 2</span> <span class="font-bold text-toss-blue">A+ / A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>기구학</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>동역학</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>PLC실습</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-3 flex items-center">💻 임베디드 시스템 및 전자</h3>
+                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4 text-toss-textBody text-sm">
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>마이크로프로세서실습1</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>디지털회로설계및실습</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>전자회로기초및실습</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>회로이론및실습</span> <span class="font-bold text-toss-blue">B+</span></li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-3 flex items-center">🔬 반도체 및 공학 기초</h3>
+                                <ul class="grid grid-cols-1 md:grid-cols-2 gap-y-2 gap-x-4 text-toss-textBody text-sm">
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>반도체공정및실습</span> <span class="font-bold text-toss-blue">A+ (수석)</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>반도체장비공학</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>수치해석및실습</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>유체역학 / 열역학</span> <span class="font-bold text-toss-blue">A+ / A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>재료역학</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                    <li class="flex justify-between border-b border-gray-100 py-2"><span>선형대수학</span> <span class="font-bold text-toss-blue">A+</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Semester Records -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-6 flex items-center"><span class="text-toss-blue mr-2">📅</span>학기별 수강 내역 요약</h2>
+                        
+                        <div class="space-y-4">
+                            <!-- 2025 -->
+                            <details class="group bg-gray-50 rounded-2xl border border-gray-100 cursor-pointer overflow-hidden open:bg-white open:shadow-sm" open>
+                                <summary class="p-5 font-bold flex justify-between items-center outline-none">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-lg">2025 학년도</span>
+                                        <span class="bg-blue-100 text-toss-blue px-2 py-1 rounded text-xs">평점: 4.50 (1학기) / 4.28 (2학기)</span>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </summary>
+                                <div class="px-5 pb-5 text-sm text-toss-textBody border-t border-gray-100 pt-4">
+                                    <div class="mb-4">
+                                        <h4 class="font-bold mb-2">1학기 | 4.50 (만점)</h4>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>반도체공정및실습 - <b>A+</b></li>
+                                            <li>로봇기구설계및해석 - <b>A+</b></li>
+                                            <li>기계제어공학및실험1 - <b>A+</b></li>
+                                            <li>유체역학 / 기계요소설계 - <b>A+</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold mb-2">2학기 | 4.28</h4>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>마이크로프로세서실습1 - <b>A+</b></li>
+                                            <li>기계제어공학및실험2 - <b>A+</b></li>
+                                            <li>반도체장비공학 - <b>A+</b></li>
+                                            <li>기계진동학 / 공학설계2 - <b>Ao</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
+
+                            <!-- 2024 -->
+                            <details class="group bg-gray-50 rounded-2xl border border-gray-100 cursor-pointer overflow-hidden open:bg-white open:shadow-sm">
+                                <summary class="p-5 font-bold flex justify-between items-center outline-none">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-lg">2024 학년도</span>
+                                        <span class="bg-blue-100 text-toss-blue px-2 py-1 rounded text-xs">평점: 4.25 (1학기) / 4.13 (2학기)</span>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </summary>
+                                <div class="px-5 pb-5 text-sm text-toss-textBody border-t border-gray-100 pt-4">
+                                    <div class="mb-4">
+                                        <h4 class="font-bold mb-2">1학기 | 4.25</h4>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>선형대수학 / 재료역학 / 열역학 - <b>A+</b></li>
+                                            <li>PLC실습 - <b>A+</b></li>
+                                            <li>회로이론및실습 - <b>B+</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold mb-2">2학기 | 4.13</h4>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>디지털회로설계및실습 - <b>A+</b></li>
+                                            <li>전자회로기초및실습 - <b>A+</b></li>
+                                            <li>수치해석및실습 - <b>A+</b></li>
+                                            <li>기구학 / 동역학 / 공업통계및실습 - <b>A+</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
+                            
+                            <!-- 2021 -->
+                            <details class="group bg-gray-50 rounded-2xl border border-gray-100 cursor-pointer overflow-hidden open:bg-white open:shadow-sm">
+                                <summary class="p-5 font-bold flex justify-between items-center outline-none">
+                                    <div class="flex items-center space-x-3">
+                                        <span class="text-lg">2021 학년도</span>
+                                        <span class="bg-blue-100 text-toss-blue px-2 py-1 rounded text-xs">평점: 4.05 (1학기) / 3.80 (2학기)</span>
+                                    </div>
+                                    <svg class="w-5 h-5 text-gray-400 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </summary>
+                                <div class="px-5 pb-5 text-sm text-toss-textBody border-t border-gray-100 pt-4">
+                                    <div class="mb-4">
+                                        <h4 class="font-bold mb-2">1학기 | 4.05</h4>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>창의적사고와글쓰기 / 컴퓨팅사고 - <b>A+</b></li>
+                                            <li>수학적사고 / 물리실험1 - <b>Ao / B+</b></li>
+                                        </ul>
+                                    </div>
+                                    <div class="mb-4">
+                                        <h4 class="font-bold mb-2">2학기 | 3.80</h4>
+                                        <ul class="list-disc pl-5 space-y-1">
+                                            <li>정역학 / 유공압기초실습 / 물리실험2 - <b>A+</b></li>
+                                            <li>CAD및실습 - <b>Ao</b></li>
+                                            <li>미분방정식 - <b>B+</b></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </details>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

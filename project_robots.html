@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Logistics Robot | Portfolio</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index.html#projects" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="w-full h-[400px] bg-gray-100">
+                <img src="public/images/robot_award.jpg" class="w-full h-full object-cover" alt="Robot Award">
+            </div>
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">Multi-Axis Autonomous Logistics Robot Control Architecture</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">Kinematic Modeling and Field-Proven Fleet Operations</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">C++</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Robot Kinematics</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Multi-Motor Sync</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Embedded Firmware</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Context & Objective -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Context & Objective</h2>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-toss-textBody leading-relaxed space-y-3">
+                            <p><strong>Overview:</strong> Development of specialized autonomous mobile robots (AMR) optimized for warehouse pick-and-place and sorting logistics.</p>
+                            <p><strong>Achievements:</strong> 2nd Place (Patent Commissioner's Award) at the 2024 World Creative Robot Contest (WCRC), and 3rd Place at the Hong Kong RoboGames (Logistics Robot Division).</p>
+                        </div>
+                    </section>
+
+                    <!-- Technical Implementation -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Technical Implementation</h2>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">1. Kinematics Modeling</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Formulated exact Forward and Inverse Kinematics models in `C++` using transformation matrices to orchestrate precise omnidirectional mobility.</li>
+                                    <li>Calibrated odometry and wheel-velocity synchronization algorithms to minimize dead-reckoning errors during high-speed transit.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">2. Embedded Control & Firmware</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Programmed low-level microcontrollers to handle high-frequency encoder feedback and real-time current/velocity control loops for individual actuators.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Deliverables & Troubleshooting -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Deliverables & Troubleshooting</h2>
+                        <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100">
+                            <p class="text-toss-textBody mb-4"><strong class="text-red-500">Hong Kong Field Incident:</strong> Unexpected arena lighting conditions blinded the optical alignment sensors, and a slick floor surface caused severe wheel slippage, throwing off the robot's coordinate positioning during the competition.</p>
+                            <p class="text-toss-textBody"><strong class="text-toss-blue">Solution:</strong> Led an emergency on-field code refactoring session. Implemented an adaptive thresholding algorithm for the optical sensors and integrated an acceleration-limiting profile in the C++ firmware to eliminate wheel slip under low-friction conditions, leading the team to a podium finish.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

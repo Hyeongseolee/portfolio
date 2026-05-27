@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자율주행 물류 로봇 | 포트폴리오</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index_ko.html#projects" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                포트폴리오로 돌아가기
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="w-full h-[400px] bg-gray-100">
+                <img src="public/images/robot_award.jpg" class="w-full h-full object-cover" alt="로봇 대회 수상">
+            </div>
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">다축 자율주행 물류 로봇 제어 아키텍처</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">기구학 모델링 및 실전 입증된 자율 주행 시스템</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">C++</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">로봇 기구학</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">다중 모터 동기화</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">임베디드 펌웨어</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Context & Objective -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>프로젝트 배경 및 목표</h2>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-toss-textBody leading-relaxed space-y-3">
+                            <p><strong>개요:</strong> 창고 내 피킹 앤 플레이스(Pick-and-place) 및 분류 물류에 최적화된 특수 자율 주행 모바일 로봇(AMR) 개발 프로젝트입니다.</p>
+                            <p><strong>주요 성과:</strong> 2024 세계 창의 로봇 대회(WCRC) 준우승(특허청장상) 및 홍콩 로보게임즈(물류 로봇 부문) 3위를 달성했습니다.</p>
+                        </div>
+                    </section>
+
+                    <!-- Technical Implementation -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>기술적 구현</h2>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">1. 기구학 모델링</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>정밀한 전방향(Omnidirectional) 이동을 위해 변환 행렬을 이용한 순기구학 및 역기구학 모델을 `C++`로 수식화했습니다.</li>
+                                    <li>고속 주행 시 추측 항법(Dead-reckoning) 오차를 최소화하기 위해 오도메트리 및 바퀴 속도 동기화 알고리즘을 정밀하게 보정했습니다.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">2. 임베디드 제어 및 펌웨어</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>개별 액추에이터의 고주파 인코더 피드백과 실시간 전류/속도 제어 루프를 처리하기 위한 로우레벨 마이크로컨트롤러 프로그래밍을 수행했습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Deliverables & Troubleshooting -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>문제 해결 및 성과</h2>
+                        <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100">
+                            <p class="text-toss-textBody mb-4"><strong class="text-red-500">홍콩 대회 현장 이슈:</strong> 예상치 못한 경기장 조명으로 인해 광학 정렬 센서가 제 기능을 하지 못했고, 미끄러운 바닥 표면으로 심각한 바퀴 슬립이 발생하여 로봇의 좌표 포지셔닝이 크게 어긋났습니다.</p>
+                            <p class="text-toss-textBody"><strong class="text-toss-blue">해결 방안:</strong> 현장에서 긴급 코드 리팩토링 세션을 주도했습니다. 광학 센서를 위한 적응형 임계값 알고리즘을 구현하고, 저마찰 조건에서 바퀴 슬립을 제거하기 위해 C++ 펌웨어에 가속도 제한 프로파일(Acceleration-limiting profile)을 통합 적용하여 위기를 극복하고 다수의 상을 수상했습니다.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

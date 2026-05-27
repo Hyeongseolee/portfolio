@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>High-Speed FSM Control | Portfolio</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index.html#projects" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                Back to Portfolio
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">High-Speed Precision Steering Mirror (FSM) PID Control System</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">Micro-Precision Optical Tracking via Dynamic System Modeling</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">MATLAB</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Simulink</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">PID Tuning</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Frequency Response Analysis</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Context & Objective -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Context & Objective</h2>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-toss-textBody leading-relaxed space-y-3">
+                            <p><strong>Overview:</strong> 2-axis High-Speed Fine Steering Mirrors (FSM) are critical components in precision laser communication and optical tracking systems.</p>
+                            <p><strong>Objective:</strong> Design, simulate, and implement a robust feedback control loop to optimize target tracking speed while suppressing high-frequency mechanical resonances during a Control R&D Internship.</p>
+                        </div>
+                    </section>
+
+                    <!-- Technical Implementation -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Technical Implementation</h2>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">1. Plant Modeling & Simulation</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Modeled the electro-mechanical dynamics of the FSM system within `MATLAB` and `Simulink`.</li>
+                                    <li>Identified system transfer functions by analyzing frequency response data (Bode plots) to locate structural resonance points.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">2. PID Controller Design</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Developed an advanced PID control architecture with a low-pass filter on the derivative term (PID + D_Filter) to suppress sensor noise.</li>
+                                    <li>Tuned controller gains (Kp, Ki, Kd) to achieve a phase margin greater than 60°, ensuring robust stability against plant parameter variations.</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">3. Performance Optimization</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>Conducted loop-shaping to maximize tracking bandwidth while maintaining safe gain and phase margins.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Deliverables & Troubleshooting -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>Deliverables & Troubleshooting</h2>
+                        <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100">
+                            <p class="text-toss-textBody mb-4"><strong class="text-red-500">Key Challenge:</strong> High-frequency structural resonance caused the closed-loop system to become unstable and oscillate when the controller gains were increased for faster response times.</p>
+                            <p class="text-toss-textBody"><strong class="text-toss-blue">Solution:</strong> Designed and inserted a digital Notch Filter into the forward control path within Simulink, successfully attenuating the resonant peak without degrading low-frequency tracking bandwidth.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정밀 궤적 생성 및 실시간 웹 제어 | 포트폴리오</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index_ko.html#projects" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                포트폴리오로 돌아가기
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="w-full h-[400px] bg-gray-100">
+                <img src="public/images/latte_art_ui.png" class="w-full h-full object-cover" alt="라떼 아트 시스템">
+            </div>
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">라떼 아트 로봇 정밀 궤적 생성 및 실시간 웹 제어 시스템</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">풀스택 아키텍처를 통한 다관절 로봇 기구학 및 사용자 경험의 융합</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Python (PyQt & Flask)</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">궤적 생성</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">로봇 기구학</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">WebSockets</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Context & Objective -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>프로젝트 배경 및 목표</h2>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-toss-textBody leading-relaxed space-y-3">
+                            <p><strong>개요:</strong> 바리스타의 섬세한 비선형적 유체 제어 및 손목 스냅 기술을 모방하도록 설계된 다관절 로봇 매니퓰레이터(UR3e) 시스템입니다.</p>
+                            <p><strong>목표:</strong> 비전문가도 GUI에 원하는 패턴을 그릴 수 있으며, 로봇이 이를 부드럽고 충돌 없는 물리적 궤적으로 즉각 번역하여 실행하는 사용자 친화적이고 안정적인 실시간 웹 제어 시스템을 구축하는 것입니다.</p>
+                        </div>
+                    </section>
+
+                    <!-- Technical Implementation -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>기술적 구현</h2>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">1. 궤적 생성 알고리즘 설계</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>`Python`을 활용해 UI의 픽셀 좌표를 시간 종속적인 위치, 속도, 가속도 프로파일로 변환하는 연속 궤적 보간(Spline/Bézier) 알고리즘을 구현했습니다.</li>
+                                    <li>곡률이 큰 드로잉 모션에서 기계적 저크(Jerk)를 줄이고 우유가 쏟아지는 것을 방지하기 위해 관절의 최대 가속도를 제한하도록 속도 프로파일을 최적화했습니다.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">2. HMI UI 및 풀스택 아키텍처 전환</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>초기에는 `Python(PyQt)` 기반 독립형 데스크톱 앱으로 드로잉 캔버스와 안전 대시보드를 구축했습니다.</li>
+                                    <li>이후 하드웨어 연동 및 제어 환경의 한계를 극복하기 위해 `Flask` 백엔드 기반의 `HTML/JS` 웹 UI로 전체 아키텍처를 전면 전환했습니다.</li>
+                                    <li>`Flask-SocketIO`(WebSocket)를 통합하여 로봇의 위치, 관절 상태, 작업 진행률(Progress Bar)을 실시간으로 브로드캐스팅하는 양방향 통신 환경을 구축했습니다.</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">3. 시스템 연동 및 통신 제어</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>웹 UI의 사용자 입력을 UR3e 로봇 제어 스크립트로 정확하게 매핑하기 위한 REST API 엔드포인트를 설계했습니다.</li>
+                                    <li>다중 모터 동기화를 위해 직렬 통신 구조를 설계하고, 생성된 궤적 데이터를 제어기로 패킷 손실 없이 스트리밍하도록 최적화했습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Deliverables & Troubleshooting -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>문제 해결 및 성과</h2>
+                        <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100 space-y-4">
+                            <div>
+                                <p class="text-toss-textBody mb-2"><strong class="text-red-500">도전 과제 1:</strong> 초기 테스트 중 급격한 곡선에서 통신 지연 및 모터의 저크 응답이 발생해 패턴이 왜곡되는 현상이 나타났습니다.</p>
+                                <p class="text-toss-textBody"><strong class="text-toss-blue">해결 방안 1:</strong> 윈도우 기반 데이터 버퍼링 기법과 룩어헤드(Look-ahead) 스무딩 알고리즘을 적용하여 안정적인 패킷 전송과 105도의 급커브에서도 정밀한 모션 얼라인먼트를 달성했습니다.</p>
+                            </div>
+                            <div class="border-t border-blue-100 pt-4">
+                                <p class="text-toss-textBody mb-2"><strong class="text-red-500">도전 과제 2:</strong> 데스크톱 및 앱 환경에서는 다수 기기에서의 접근성 및 실시간 화면 공유, 하드웨어 유지보수에 한계가 있었습니다.</p>
+                                <p class="text-toss-textBody"><strong class="text-toss-blue">해결 방안 2:</strong> HTML/JS 웹 UI와 Flask 기반 웹소켓 통신 구조로 아키텍처를 과감히 전환하여 뛰어난 접근성을 확보하고, 실제 카페 환경에 맞는 주문 큐(Queue) 시스템까지 통합한 완성도 높은 제어 시스템을 구축했습니다.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>

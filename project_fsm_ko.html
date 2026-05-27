@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고속 틸팅 미러 제어 | 포트폴리오</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Pretendard', 'sans-serif'] }, colors: { toss: { blue: '#3182F6', blueHover: '#1b64da', bg: '#F2F4F6', textTitle: '#333D4B', textBody: '#4E5968', textMuted: '#8B95A1', white: '#FFFFFF' } } } } }
+    </script>
+    <style> body { background-color: #F2F4F6; color: #333D4B; font-family: 'Pretendard', sans-serif; -webkit-font-smoothing: antialiased; word-break: keep-all; } </style>
+</head>
+<body class="bg-toss-bg text-toss-textTitle">
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-4xl mx-auto px-6 py-4">
+            <a href="index_ko.html#projects" class="text-toss-textBody hover:text-toss-blue transition-colors flex items-center font-bold">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                포트폴리오로 돌아가기
+            </a>
+        </div>
+    </nav>
+    <main class="pt-24 pb-20 px-6">
+        <article class="max-w-4xl mx-auto bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100">
+            <div class="p-10 md:p-16">
+                <h1 class="text-3xl md:text-5xl font-bold mb-4">고속 초정밀 틸팅 미러 (FSM) PID 제어 시스템</h1>
+                <p class="text-xl text-toss-blue font-semibold mb-6">동역학 모델링을 통한 초정밀 광학 트래킹</p>
+                <div class="flex flex-wrap gap-2 mb-10">
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">MATLAB</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">Simulink</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">PID 제어</span>
+                    <span class="bg-toss-bg text-toss-textBody px-4 py-1.5 rounded-lg text-sm font-medium">주파수 응답 분석</span>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Context & Objective -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>프로젝트 배경 및 목표</h2>
+                        <div class="bg-gray-50 rounded-2xl p-6 text-toss-textBody leading-relaxed space-y-3">
+                            <p><strong>개요:</strong> 2축 고속 틸팅 미러(FSM)는 정밀 레이저 통신 및 광학 트래킹 시스템의 핵심 부품입니다.</p>
+                            <p><strong>목표:</strong> 제어 R&D 인턴으로서 고주파 기계적 공진을 억제하면서 타겟 트래킹 속도를 최적화하는 강건한 피드백 제어 루프를 설계, 시뮬레이션 및 구현하는 것을 목표로 했습니다.</p>
+                        </div>
+                    </section>
+
+                    <!-- Technical Implementation -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>기술적 구현</h2>
+                        <div class="space-y-6">
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">1. 시스템 모델링 및 시뮬레이션</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>`MATLAB`과 `Simulink`를 활용하여 FSM 시스템의 전기-기계적 동역학을 모델링했습니다.</li>
+                                    <li>주파수 응답 데이터(Bode Plot)를 분석하여 시스템의 전달 함수를 식별하고 구조적 공진점(Resonance points)을 파악했습니다.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">2. PID 제어기 설계</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>센서 노이즈를 억제하기 위해 미분항에 저주파 통과 필터(Low-pass Filter)를 결합한 고급 PID 제어기(PID + D_Filter)를 설계했습니다.</li>
+                                    <li>플랜트 파라미터 변화에 대한 강건한 안정성을 보장하기 위해 60° 이상의 위상 여유(Phase Margin)를 확보하도록 제어기 게인(Kp, Ki, Kd)을 튜닝했습니다.</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-l-4 border-toss-blue pl-4">
+                                <h3 class="text-lg font-bold mb-2">3. 성능 최적화</h3>
+                                <ul class="list-disc pl-5 space-y-2 text-toss-textBody">
+                                    <li>안전한 이득 여유(Gain Margin)와 위상 여유를 유지하면서 트래킹 대역폭을 최대화하는 루프 셰이핑(Loop-shaping)을 수행했습니다.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Deliverables & Troubleshooting -->
+                    <section>
+                        <h2 class="text-2xl font-bold mb-4 flex items-center"><span class="text-toss-blue mr-2">🔹</span>문제 해결 및 성과</h2>
+                        <div class="bg-blue-50/50 rounded-2xl p-6 border border-blue-100">
+                            <p class="text-toss-textBody mb-4"><strong class="text-red-500">도전 과제:</strong> 응답 속도를 높이기 위해 제어기 게인을 증가시켰을 때 고주파 기계적 공진으로 인해 폐루프 시스템이 불안정해지고 발진하는 현상이 발생했습니다.</p>
+                            <p class="text-toss-textBody"><strong class="text-toss-blue">해결 방안:</strong> Simulink의 전방 제어 경로에 디지털 노치 필터(Notch Filter)를 설계 및 삽입하여, 저주파 대역의 트래킹 성능 저하 없이 공진 피크를 성공적으로 감쇠시켰습니다.</p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </article>
+    </main>
+</body>
+</html>
