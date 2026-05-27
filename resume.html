@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyeongseo Lee - Resume</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Pretendard', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #f3f4f6;
+            color: #111827;
+        }
+        .a4-page {
+            width: 210mm;
+            min-height: 297mm;
+            padding: 20mm;
+            margin: 10mm auto;
+            background: white;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        @media print {
+            body { background: white; margin: 0; padding: 0; }
+            .a4-page { width: 100%; min-height: 100%; margin: 0; padding: 15mm; box-shadow: none; }
+            .no-print { display: none !important; }
+        }
+        h1 { font-size: 2.25rem; font-weight: 800; color: #111827; margin-bottom: 0.25rem; }
+        h2 { font-size: 1.125rem; font-weight: 700; color: #3182F6; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.25rem; margin-top: 1.5rem; margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; }
+        h3 { font-size: 1rem; font-weight: 700; color: #111827; }
+        p, li { font-size: 0.875rem; line-height: 1.5; color: #374151; }
+        ul { list-style-type: disc; padding-left: 1.25rem; margin-top: 0.25rem; margin-bottom: 0.75rem; }
+        .contact-info { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.875rem; color: #4B5563; margin-bottom: 1rem; }
+        .section-item { margin-bottom: 1rem; }
+        .item-header { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.25rem; }
+        .item-title { font-weight: 700; font-size: 1rem; color: #111827; }
+        .item-subtitle { font-style: italic; color: #4B5563; font-size: 0.875rem; }
+        .item-date { color: #6B7280; font-size: 0.875rem; font-weight: 500; }
+        .item-desc { font-weight: 500; color: #111827; font-size: 0.875rem; margin-bottom: 0.25rem; }
+    </style>
+</head>
+<body>
+    <div class="fixed top-4 right-4 no-print z-50">
+        <button onclick="window.print()" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors flex items-center">
+            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            Save as PDF (인쇄하기)
+        </button>
+    </div>
+
+    <div class="a4-page">
+        <header>
+            <h1>HYEONGSEO LEE</h1>
+            <div class="contact-info">
+                <span>Daejeon, South Korea</span>
+                <span>•</span>
+                <span>+82-10-4598-9029</span>
+                <span>•</span>
+                <a href="mailto:dlgudtj02@gmail.com" class="text-blue-600">dlgudtj02@gmail.com</a>
+                <span>•</span>
+                <a href="https://github.com/Hyeongseolee" class="text-blue-600">github.com/Hyeongseolee</a>
+            </div>
+        </header>
+
+        <section>
+            <h2>🚀 Professional Summary</h2>
+            <p>Detail-oriented and highly adaptive Mechatronics Engineer specializing in <strong>Aerospace & Control Engineering</strong>. Proven track record in designing multi-axis robotic kinematics, developing high-speed precision PID control loops, and engineering standalone HMI UI/UX platforms. Demonstrated global leadership through international robotics awards, technical pitching to VIPs at world-class congresses, and cross-cultural technical training. Driven to integrate classical control theory with cutting-edge Deep Learning architectures.</p>
+        </section>
+
+        <section>
+            <h2>🎓 Education</h2>
+            <div class="section-item">
+                <div class="item-header">
+                    <span class="item-title">Korea University of Technology and Education (Koreatech)</span>
+                    <span class="item-date">Cheonan, South Korea</span>
+                </div>
+                <div class="item-header">
+                    <span class="item-subtitle">Bachelor of Engineering in Mechatronics Engineering</span>
+                    <span class="item-date">Mar 2021 – Feb 2026 (Expected)</span>
+                </div>
+                <ul class="mt-2">
+                    <li><strong>Cumulative GPA:</strong> <strong>4.18 / 4.5</strong> (Percentile Score: 96.16/100)</li>
+                    <li><strong>Specialization:</strong> Control Systems & Aerospace Engineering</li>
+                    <li><strong>Intensive Track:</strong> Semiconductor Equipment Parts Convergence Major</li>
+                    <li><strong>Honors:</strong> Achieved a perfect GPA of 4.50/4.50 (Spring 2025)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🛠️ Technical Skills</h2>
+            <ul>
+                <li><strong>Programming Languages:</strong> C++, Python, MATLAB, R programming</li>
+                <li><strong>Control & Simulation:</strong> Simulink, PID Controller Tuning, Kinematics Modeling, Trajectory Generation, ROS</li>
+                <li><strong>Hardware & Embedded:</strong> MCU Interfacing, Dynamixel Servo Control, PLC (Ladder Logic), Sequence Control</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>💼 Professional Experience</h2>
+            <div class="section-item">
+                <div class="item-header">
+                    <span class="item-title">Insera Solution</span>
+                    <span class="item-date">Nov 2025 – Apr 2026</span>
+                </div>
+                <div class="item-subtitle mb-2">Control R&D Intern</div>
+                <ul>
+                    <li><strong>Project:</strong> High-Speed Precision Steering Mirror (FSM) PID Control System Development</li>
+                    <li>Modeled the electro-mechanical dynamics of 2-axis Fast Steering Mirrors (FSM) inside MATLAB/Simulink using frequency response data (Bode plots).</li>
+                    <li>Designed an advanced PID control architecture with a low-pass derivative filter (PID+D_Filter) to suppress high-frequency sensor noise, achieving a phase margin > 60°.</li>
+                    <li>Attenuated structural resonance peaks by implementing a digital Notch Filter into the forward control path, maximizing tracking bandwidth without system oscillations.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🔬 Key Engineering Projects</h2>
+            <div class="section-item">
+                <div class="item-header">
+                    <span class="item-title">Latte Art Robot Trajectory & HMI System</span>
+                    <span class="item-date">Mar 2025 – Dec 2025</span>
+                </div>
+                <div class="item-subtitle mb-2">Capstone Design Project | Lead Algorithm Designer & GUI Developer</div>
+                <ul>
+                    <li><strong>Description:</strong> Designed an automated latte art system translating user drawings into physical robot paths.</li>
+                    <li>Developed a continuous path interpolation algorithm (Spline/Bézier profiles) in Python to convert pixel inputs into time-dependent velocity profiles, minimizing mechanical jerk and spillage.</li>
+                    <li>Built a standalone desktop HMI UI using Python (PyQt) featuring real-time joint velocity visualizers and a safety dashboard.</li>
+                    <li>Implemented an emergency window-based data buffering and look-ahead smoothing technique to guarantee steady packet transmission and a 105° sharp-turn alignment under serial communication.</li>
+                </ul>
+            </div>
+            <div class="section-item">
+                <div class="item-header">
+                    <span class="item-title">Autonomous Logistics Robot Control Platform</span>
+                    <span class="item-date">Mar 2024 – Apr 2026</span>
+                </div>
+                <div class="item-subtitle mb-2">Competition Project | Embedded Control & Kinematics Software Engineer</div>
+                <ul>
+                    <li><strong>Description:</strong> Developed specialized autonomous mobile robots (AMR) for warehouse sorting.</li>
+                    <li>Formulated Forward/Inverse Kinematics models in C++ using multi-variable transformation matrices for precise omnidirectional mobility.</li>
+                    <li>Managed low-level microcontroller firmware to handle encoder feedback loops and multi-motor synchronization.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>🏆 Honors & Awards</h2>
+            <ul>
+                <li><strong>2nd Place (Patent Commissioner's Award)</strong> | World Creative Robot Contest (WCRC) | 2024
+                    <ul class="mt-1 mb-2"><li>Awarded for breakthrough mechanical design and navigation stability in the Logistics Robot category.</li></ul>
+                </li>
+                <li><strong>3rd Place</strong> | Hong Kong RoboGames (Logistics Robot Division) | 2026
+                    <ul class="mt-1"><li>Led on-field emergency code refactoring under low-friction slick floors and changing lighting conditions.</li></ul>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>🌍 Global & Extra-Curricular Activities</h2>
+            <div class="section-item mb-3">
+                <div class="item-header">
+                    <span class="item-title">Smart City Expo World Congress (SCEWC)</span>
+                    <span class="item-date">Barcelona, Spain | Nov 2025</span>
+                </div>
+                <div class="item-subtitle">Corporate Supporter</div>
+                <p class="mt-1">Conducting live technical pitching and hardware demonstrations of South Korean smart city solutions to global municipal leaders and international B2B buyers in English.</p>
+            </div>
+            <div class="section-item mb-3">
+                <div class="item-header">
+                    <span class="item-title">Global Technical Volunteerism</span>
+                    <span class="item-date">Vietnam | Jan 2024</span>
+                </div>
+                <div class="item-subtitle">Main Instructor & Mentor</div>
+                <p class="mt-1">Engineered a comprehensive, hands-on industrial PLC (Ladder Logic) curriculum and delivered technical sequence control lectures to Vietnamese tech students under a multilingual environment.</p>
+            </div>
+            <div class="section-item">
+                <div class="item-header">
+                    <span class="item-title">Semiconductor Process & Practice Course</span>
+                    <span class="item-date">Koreatech | Sep 2025 – Dec 2025</span>
+                </div>
+                <div class="item-subtitle">Peer Tutor</div>
+                <p class="mt-1">Selected as a tutor by the department professor to instruct junior students on microfabrication steps and semiconductor equipment operations due to top academic performance.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
